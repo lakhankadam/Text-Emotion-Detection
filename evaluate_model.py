@@ -34,6 +34,7 @@ def run():
             features = vectorizer.transform(features)
             prediction = clf.predict(features)[0]
             print(text, emoji_dict[prediction])
-
+        print()
+        
 if __name__ == '__main__':
     run()
